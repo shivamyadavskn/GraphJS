@@ -2,6 +2,7 @@ import React from "react";
 import EventTypeChart from "./EventTypeChart";
 import ProtocolChart from "./ProtocolChart";
 import SeverityChart from "./SeverityChart";
+import SourceIPChart from "./SourceIPChart";
 import data from "./data/eve.json";
 
 const App = () => {
@@ -20,6 +21,10 @@ const App = () => {
         <div className="bg-gray-800 p-4 rounded shadow">
           <h2 className="text-xl font-bold mb-4">Severities</h2>
           <SeverityChart data={data} />
+        </div>
+        <div className="bg-gray-800 p-4 rounded shadow">
+          <h2 className="text-xl font-bold mb-4">Source IP Addresses</h2>
+          <SourceIPChart data={data} />
         </div>
       </div>
     </div>
